@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        body{
+            padding: 10px 50px;
+            text-align: center;
+            background-color: aqua;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+        h1,h2{
+            text-decoration: underline;
+            font-size: 20px;
+            color: orange;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        h1:hover,h2:hover{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1>mike </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus eligendi repudiandae quaerat corporis itaque incidunt aut, vitae necessitatibus tempora assumenda deleniti dolorem? Non officiis quae tempora. Dolor, nesciunt reprehenderit.</p>
+    <h2>cyber security engineer</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis officiis, labore aut sapiente ullam possimus! Consequuntur labore vero fugit nobis nostrum culpa ex tempora, quo cumque natus eaque, veritatis laboriosam.</p>
+
+    <p id="more" style="color: red;"></p>
+
+    <button onclick="document.getElementById('more').innerHTML=more">click me</button>
+
+    <h1 id="clickedTimes"></h1>
+    <button onclick="document.getElementById('clickedTimes').innerHTML=counter++">clickedTimes</button>
+
+    <script>
+        let more = "check my cv"; 
+        let counter = 0;
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
